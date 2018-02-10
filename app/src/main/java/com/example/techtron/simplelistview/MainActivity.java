@@ -22,6 +22,7 @@ public class MainActivity extends Activity {
         //context, defines how a single row should appear in your list view, data
         //android has many premade layouts defined and they are in android.R.layout.<define>
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1 , days);
-
+        //set the adapter, hey listview heres the guy who is actually responsible for setting the listview its called the adapter
+        l.setAdapter(adapter);
     }
 }
